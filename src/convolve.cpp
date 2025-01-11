@@ -60,13 +60,6 @@ int main() {
         }
     }
 
-    // flip the kernel matrix
-    for (int i = 0; i < ker_rows / 2; i++) {
-        for (int j = 0; j < ker_cols; j++) {
-            swap(kernel[i][j], kernel[ker_rows - i - 1][ker_cols - j - 1]);
-        }
-    }
-
     int img_rows, img_cols;
     file >> img_rows >> img_cols;
 
